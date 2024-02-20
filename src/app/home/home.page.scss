@@ -1,0 +1,40 @@
+.ticketWrapper {
+  width           : 94%;
+  margin          : 20px auto;
+  border-radius   : 15px;
+  border          : 1px solid #DFE6FF;
+  padding         : 22px;
+  .voterNameAndEdit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .voterName {
+    font-size  : 15px;
+    line-height: 23px;
+    color      : #000;
+    font-family: Poppins-Medium;
+    display    : block;
+  } 
+  .voterAddress {
+    display: flex !important;
+    font-size    : 14px;
+    line-height  : 23px;
+    color        : #2196F3;
+    font-family  : Poppins-Medium;
+    display      : block;
+    width: 90%;
+  }
+}
+
+.hearderTitle {
+  font-size: var(--font-4);
+  font-family: Poppins-Medium;
+  text-transform: capitalize;
+  color: #2196f3;
+  position: absolute;
+  justify-self: center;
+  text-align: center;
+  font-weight: 500;
+}

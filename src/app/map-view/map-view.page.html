@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true" class="container" >
+  <img class="back-button" (click)="goBack()" src="../../assets/backArrow.svg" />
+
+  <div class="mapView">
+    <div #map id="map" class="map"></div>
+    <ion-buttons id="refreshButton" (click)="gotoCurrentLoc()">
+      <img src="../../../assets/locate.svg" /></ion-buttons>
+  </div>
+</ion-content>
+<div class="footer" >
+  <div style="flex-direction: column; display: flex;">
+    <ion-label class="duration">{{durationFormatter(duration)}}</ion-label> <ion-label class="distance">({{setRoundeOff(distance/1000)}} KM)</ion-label>
+  </div>
+  <ion-buttons class="navigation-button" (click)="generateGoogleMapsUrl()">
+    <ion-label class="label">Start</ion-label>
+    <img src="../../assets/navigation.png" height="20px"/>
+  </ion-buttons>
+</div>
+
+<div *ngIf="spinner" class="spinner">
+  <ion-spinner name="lines-sharp" mode="md"></ion-spinner>
+</div>
+

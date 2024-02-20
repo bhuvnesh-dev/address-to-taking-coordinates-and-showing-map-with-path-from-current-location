@@ -1,0 +1,7 @@
+{
+  "name": " Address to taking coordinates and showing map with Path from current location",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

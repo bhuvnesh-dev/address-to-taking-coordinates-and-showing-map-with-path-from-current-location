@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="hearderTitle">
+      Address
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="ticketWrapper">
+      <div class="voterNameAndEdit">
+      <ion-label class="voterName">{{voters.first_name + " " + voters.last_name}}</ion-label>
+      </div>
+      <div style="display: flex; flex-direction: row; align-items: center; margin-bottom: 10px;">
+      <ion-label class="voterAddress" (click)="openMap(voters)">{{voters.address+' '+voters.postal_code}}
+      </ion-label>
+      <div style="width: 10%;" (click)="openMap(voters)"><img src="../../assets/location.svg" style="width: 14px; margin-left: 6px"/></div>
+      </div>
+    </div>
+</ion-content>
